@@ -12,11 +12,11 @@ type Job = {
 const jobs: Job[] = [
   {
     date: "2024 — Present",
-    role: "Front-End Developer",
+    role: "Founder & Lead Developer",
     company: "FoundryFour",
     url: "#",
     description:
-      "Lead the technical vision for client-facing web products. Build component libraries, marketing sites, and dashboards with a focus on performance budgets and accessibility.",
+      "Founded FoundryFour to help startups scale their web presence. Manage end-to-end client projects — discovery, design hand-off, implementation, and deployment — and improved client retention by 30% through a focus on clear scope, weekly demos, and durable hand-off documentation.",
     tech: ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "Vercel"],
   },
   {
@@ -25,17 +25,8 @@ const jobs: Job[] = [
     company: "InfoLabz",
     url: "#",
     description:
-      "Shipped pixel-perfect responsive interfaces for client web apps. Collaborated closely with designers and back-end engineers to deliver features end-to-end.",
+      "Shipped pixel-perfect, responsive interfaces for client web apps and reduced page load times by ~40% through front-end optimization — code-splitting, image strategy, font loading, and trimming render-blocking JS on the critical path.",
     tech: ["React", "JavaScript", "SCSS", "REST APIs", "Git"],
-  },
-  {
-    date: "2022 — 2023",
-    role: "Technical Content Engineer",
-    company: "GeeksforGeeks",
-    url: "#",
-    description:
-      "Authored and reviewed technical articles on JavaScript, React, and front-end fundamentals. Built interactive code examples used by thousands of learners.",
-    tech: ["JavaScript", "React", "HTML", "CSS"],
   },
   {
     date: "2021 — 2022",
@@ -43,7 +34,7 @@ const jobs: Job[] = [
     company: "Scrollcraft",
     url: "#",
     description:
-      "Built marketing sites and landing pages for early-stage founders. Owned design hand-off, implementation, and deployment.",
+      "Built marketing sites and landing pages for early-stage founders. Owned design hand-off, implementation, accessibility review, and deployment.",
     tech: ["React", "Next.js", "Tailwind CSS", "Vercel"],
   },
 ];
@@ -64,7 +55,7 @@ export function Experience() {
         {jobs.map((job) => (
           <li key={job.role + job.company} className="mb-12">
             <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-              <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-card/40 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)]" />
+              <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-card/40 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(168,85,247,0.15)]" />
               <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-muted-foreground sm:col-span-2">
                 {job.date}
               </header>

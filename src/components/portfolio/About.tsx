@@ -12,25 +12,34 @@ export function About() {
       </div>
       <div className="space-y-4 text-muted-foreground leading-relaxed">
         <p>
-          I'm a front-end developer who cares deeply about the craft of building
-          interfaces that feel fast, accessible, and effortless. My work sits
-          where design intent meets implementation — translating Figma files,
-          ideas, and rough sketches into production-grade React code.
+          I'm a Computer Science Engineer (B.Tech) and the founder of{" "}
+          <span className="font-medium text-foreground">FoundryFour</span>, a
+          small studio I started to help early-stage startups ship fast,
+          accessible, and well-engineered web products. My work sits at the
+          intersection of careful engineering and clear communication.
         </p>
         <p>
-          Currently, I lead front-end work at{" "}
-          <span className="font-medium text-foreground">FoundryFour</span>,
-          where I ship interfaces for product launches, marketing sites, and
-          internal tools. Previously, I contributed to learning experiences at{" "}
+          Over the last four years, I've authored{" "}
+          <span className="font-medium text-foreground">
+            100+ technical articles
+          </span>{" "}
+          for{" "}
           <span className="font-medium text-foreground">GeeksforGeeks</span>,
-          built client work at{" "}
-          <span className="font-medium text-foreground">InfoLabz</span>, and
-          freelanced through{" "}
-          <span className="font-medium text-foreground">Scrollcraft</span>.
+          breaking down JavaScript, React, and CSS concepts for a global
+          audience of developers. That practice shaped how I write code: with
+          the same care I put into documentation — readable, intentional, and
+          built to be handed off.
         </p>
         <p>
-          When I'm not coding, I'm reading about typography, exploring new
-          animation libraries, or refactoring my own portfolio (again).
+          Today I lead front-end engineering at FoundryFour and partner with
+          founders on everything from marketing sites to full product UIs.
+          Previously, I shipped client work at{" "}
+          <span className="font-medium text-foreground">InfoLabz</span> and
+          freelanced as <span className="font-medium text-foreground">Scrollcraft</span>.
+        </p>
+        <p>
+          When I'm not coding, I'm usually writing — about typography, web
+          performance, or whatever rabbit hole the docs led me down this week.
         </p>
       </div>
     </section>
