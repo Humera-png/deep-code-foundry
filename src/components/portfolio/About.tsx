@@ -12,34 +12,42 @@ export function About() {
       </div>
       <div className="space-y-4 text-muted-foreground leading-relaxed">
         <p>
-          I'm a Computer Science Engineer (B.Tech) and the founder of{" "}
-          <span className="font-medium text-foreground">FoundryFour</span>, a
-          small studio I started to help early-stage startups ship fast,
-          accessible, and well-engineered web products. My work sits at the
-          intersection of careful engineering and clear communication.
+          I'm a Computer Science Engineer (B.Tech) specializing in{" "}
+          <span className="font-medium text-foreground">
+            front-end architecture
+          </span>{" "}
+          and{" "}
+          <span className="font-medium text-foreground">
+            AI-driven interfaces
+          </span>
+          . Currently, I operate as an independent developer for global clients
+          on Upwork and LinkedIn, often leading collaborative engineering teams
+          that bridge the gap between design intent and complex backends.
         </p>
         <p>
-          Over the last four years, I've authored{" "}
+          I evolved from a UI/UX background into pure engineering because I
+          wanted to own the execution, not just the vision. That design-native
+          perspective is now what lets me implement high-fidelity interfaces
+          with extreme technical precision — pixel discipline, predictable
+          performance budgets, and code that's safe to hand off.
+        </p>
+        <p>
+          Alongside client work, I have a four-year tenure at{" "}
+          <span className="font-medium text-foreground">GeeksforGeeks</span>,
+          where I've authored{" "}
           <span className="font-medium text-foreground">
             100+ technical articles
           </span>{" "}
-          for{" "}
-          <span className="font-medium text-foreground">GeeksforGeeks</span>,
-          breaking down JavaScript, React, and CSS concepts for a global
-          audience of developers. That practice shaped how I write code: with
-          the same care I put into documentation — readable, intentional, and
-          built to be handed off.
+          deconstructing React, JavaScript, and CSS for a global audience of
+          developers — work that continues to shape how I document, mentor, and
+          explain technical decisions on every team I join.
         </p>
         <p>
-          Today I lead front-end engineering at FoundryFour and partner with
-          founders on everything from marketing sites to full product UIs.
-          Previously, I shipped client work at{" "}
-          <span className="font-medium text-foreground">InfoLabz</span> and
-          freelanced as <span className="font-medium text-foreground">Scrollcraft</span>.
-        </p>
-        <p>
-          When I'm not coding, I'm usually writing — about typography, web
-          performance, or whatever rabbit hole the docs led me down this week.
+          Previously, I founded{" "}
+          <span className="font-medium text-foreground">FoundryFour</span> and{" "}
+          <span className="font-medium text-foreground">Scrollcraft</span>, and
+          shipped optimization work as a front-end engineering intern at
+          InfoLabz.
         </p>
       </div>
     </section>
