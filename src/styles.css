@@ -2,14 +2,13 @@
 @source "../src";
 @import "tw-animate-css";
 
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-serif: "Cormorant Garamond", ui-serif, Georgia, serif;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-mono: "Inter", ui-monospace, monospace;
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -35,56 +34,50 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --color-gold: var(--gold);
-  --color-obsidian: var(--obsidian);
-  --color-obsidian-elevated: var(--obsidian-elevated);
+  --color-slate: var(--slate);
+  --color-slate-light: var(--slate-light);
+  --color-teal: var(--teal);
 }
 
 :root {
   --radius: 0.5rem;
 
-  /* Deep Obsidian palette */
-  --obsidian: oklch(0.13 0.003 270);          /* #080808-ish base */
-  --obsidian-elevated: oklch(0.17 0.004 270); /* slightly raised surfaces */
+  /* Deep slate/navy palette */
+  --slate: oklch(0.21 0.04 256);             /* ~#0f172a */
+  --slate-light: oklch(0.27 0.04 256);
+  --teal: oklch(0.85 0.13 180);              /* accent */
 
-  --background: oklch(0.13 0.003 270);
-  --foreground: oklch(0.95 0.005 90);
+  --background: oklch(0.21 0.04 256);
+  --foreground: oklch(0.86 0.02 250);
 
-  --card: oklch(0.17 0.004 270);
-  --card-foreground: oklch(0.95 0.005 90);
-  --popover: oklch(0.17 0.004 270);
-  --popover-foreground: oklch(0.95 0.005 90);
+  --card: oklch(0.27 0.04 256);
+  --card-foreground: oklch(0.92 0.02 250);
+  --popover: oklch(0.27 0.04 256);
+  --popover-foreground: oklch(0.92 0.02 250);
 
-  /* Champagne gold accent */
-  --gold: oklch(0.82 0.09 85);
-  --primary: oklch(0.82 0.09 85);
-  --primary-foreground: oklch(0.13 0.003 270);
+  --primary: oklch(0.85 0.13 180);
+  --primary-foreground: oklch(0.21 0.04 256);
 
-  --secondary: oklch(0.22 0.005 270);
-  --secondary-foreground: oklch(0.95 0.005 90);
+  --secondary: oklch(0.3 0.04 256);
+  --secondary-foreground: oklch(0.92 0.02 250);
 
-  --muted: oklch(0.2 0.004 270);
-  --muted-foreground: oklch(0.62 0.01 90);
+  --muted: oklch(0.27 0.04 256);
+  --muted-foreground: oklch(0.65 0.02 250);
 
-  --accent: oklch(0.82 0.09 85);
-  --accent-foreground: oklch(0.13 0.003 270);
+  --accent: oklch(0.85 0.13 180);
+  --accent-foreground: oklch(0.21 0.04 256);
 
   --destructive: oklch(0.6 0.22 27);
   --destructive-foreground: oklch(0.98 0 0);
 
   --border: oklch(1 0 0 / 8%);
   --input: oklch(1 0 0 / 12%);
-  --ring: oklch(0.82 0.09 85 / 50%);
-
-  --gradient-gold: linear-gradient(135deg, oklch(0.88 0.08 85), oklch(0.7 0.12 70));
-  --gradient-veil: radial-gradient(ellipse at top, oklch(0.22 0.02 80 / 0.35), transparent 60%);
-  --shadow-elegant: 0 30px 80px -30px oklch(0 0 0 / 0.7);
-  --shadow-gold: 0 0 60px -15px oklch(0.82 0.09 85 / 0.4);
+  --ring: oklch(0.85 0.13 180 / 50%);
 }
 
 .dark {
-  --background: oklch(0.13 0.003 270);
-  --foreground: oklch(0.95 0.005 90);
+  --background: oklch(0.21 0.04 256);
+  --foreground: oklch(0.86 0.02 250);
 }
 
 @layer base {
@@ -97,59 +90,33 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
     -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
   }
 
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans);
-    font-weight: 300;
-    letter-spacing: 0.01em;
-  }
-
-  h1, h2, h3, h4 {
-    font-family: var(--font-serif);
     font-weight: 400;
-    letter-spacing: -0.015em;
   }
 
   ::selection {
-    background: var(--gold);
-    color: var(--obsidian);
+    background: var(--teal);
+    color: var(--slate);
   }
 }
 
 @layer utilities {
-  .font-serif { font-family: var(--font-serif); }
-  .font-sans { font-family: var(--font-sans); }
-  .font-mono { font-family: var(--font-mono); }
+  .text-teal { color: var(--teal); }
+  .bg-slate { background-color: var(--slate); }
+  .bg-slate-light { background-color: var(--slate-light); }
 
-  .text-gold { color: var(--gold); }
-  .bg-obsidian { background-color: var(--obsidian); }
-  .bg-obsidian-elevated { background-color: var(--obsidian-elevated); }
-
-  .gradient-gold-text {
-    background: var(--gradient-gold);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
-
-  .veil {
-    background: var(--gradient-veil);
-  }
-
-  .grain::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    opacity: 0.04;
-    mix-blend-mode: overlay;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.6'/></svg>");
-  }
-
-  .hairline {
-    border-top: 1px solid var(--color-border);
+  /* Mouse-tracking spotlight */
+  .spotlight {
+    background: radial-gradient(
+      600px circle at var(--mx, 50%) var(--my, 50%),
+      oklch(0.85 0.13 180 / 0.08),
+      transparent 40%
+    );
   }
 }
