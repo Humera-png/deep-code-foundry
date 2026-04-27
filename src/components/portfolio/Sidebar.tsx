@@ -4,6 +4,7 @@ import { Github, Linkedin, Briefcase } from "lucide-react";
 const sections = [
   { id: "about", label: "About" },
   { id: "experience", label: "Experience" },
+  { id: "writing", label: "Writing" },
   { id: "projects", label: "Projects" },
 ];
 
