@@ -42,37 +42,37 @@
 :root {
   --radius: 0.5rem;
 
-  /* Pure black + electric violet palette */
+  /* Pure black + electric indigo palette (#6366f1) */
   --slate: oklch(0 0 0);                     /* #000000 */
-  --slate-light: oklch(0.18 0.02 290);
-  --teal: oklch(0.7 0.27 295);               /* electric violet accent (kept name for compat) */
+  --slate-light: oklch(0.18 0.03 265);
+  --teal: oklch(0.585 0.233 277);            /* electric indigo accent (kept name for compat) */
 
   --background: oklch(0 0 0);
-  --foreground: oklch(0.92 0.01 280);
+  --foreground: oklch(0.93 0.01 260);
 
-  --card: oklch(0.14 0.02 290);
-  --card-foreground: oklch(0.95 0.01 280);
-  --popover: oklch(0.14 0.02 290);
-  --popover-foreground: oklch(0.95 0.01 280);
+  --card: oklch(0.14 0.02 265);
+  --card-foreground: oklch(0.95 0.01 260);
+  --popover: oklch(0.14 0.02 265);
+  --popover-foreground: oklch(0.95 0.01 260);
 
-  --primary: oklch(0.7 0.27 295);
-  --primary-foreground: oklch(0 0 0);
+  --primary: oklch(0.585 0.233 277);
+  --primary-foreground: oklch(0.98 0 0);
 
-  --secondary: oklch(0.18 0.02 290);
-  --secondary-foreground: oklch(0.95 0.01 280);
+  --secondary: oklch(0.18 0.03 265);
+  --secondary-foreground: oklch(0.95 0.01 260);
 
-  --muted: oklch(0.14 0.02 290);
-  --muted-foreground: oklch(0.62 0.02 280);
+  --muted: oklch(0.14 0.02 265);
+  --muted-foreground: oklch(0.65 0.02 260);
 
-  --accent: oklch(0.7 0.27 295);
-  --accent-foreground: oklch(0 0 0);
+  --accent: oklch(0.585 0.233 277);
+  --accent-foreground: oklch(0.98 0 0);
 
   --destructive: oklch(0.6 0.22 27);
   --destructive-foreground: oklch(0.98 0 0);
 
   --border: oklch(1 0 0 / 8%);
   --input: oklch(1 0 0 / 12%);
-  --ring: oklch(0.7 0.27 295 / 50%);
+  --ring: oklch(0.585 0.233 277 / 50%);
 }
 
 .dark {
@@ -115,8 +115,10 @@
   .spotlight {
     background: radial-gradient(
       600px circle at var(--mx, 50%) var(--my, 50%),
-      oklch(0.7 0.27 295 / 0.12),
+      oklch(0.585 0.233 277 / 0.15),
       transparent 40%
     );
   }
+
+  .tracking-tightest { letter-spacing: -0.04em; }
 }

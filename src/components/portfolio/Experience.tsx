@@ -11,31 +11,49 @@ type Job = {
 
 const jobs: Job[] = [
   {
-    date: "2024 — Present",
+    date: "2021 — Present",
+    role: "Independent Front-End Developer",
+    company: "Upwork & LinkedIn",
+    url: "#",
+    description:
+      "Architecting and deploying high-performance web platforms for global startups. Specializing in design-to-code fidelity, performance auditing, and AI API integrations — leading collaborative engineering workflows alongside backend and design partners.",
+    tech: ["React", "TypeScript", "Next.js", "Tailwind CSS", "OpenAI API", "Vercel"],
+  },
+  {
+    date: "Jan 2025 — July 2025",
     role: "Founder & Lead Developer",
     company: "FoundryFour",
     url: "#",
     description:
-      "Founded FoundryFour to help startups scale their web presence. Manage end-to-end client projects — discovery, design hand-off, implementation, and deployment — and improved client retention by 30% through a focus on clear scope, weekly demos, and durable hand-off documentation.",
+      "Directed the technical roadmap for a creative development studio. Managed full product lifecycles for early-stage founders before successfully closing the venture to focus on independent high-scale engineering work.",
     tech: ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "Vercel"],
   },
   {
-    date: "2023 — 2024",
-    role: "Front-End Developer",
-    company: "InfoLabz",
-    url: "#",
-    description:
-      "Shipped pixel-perfect, responsive interfaces for client web apps and reduced page load times by ~40% through front-end optimization — code-splitting, image strategy, font loading, and trimming render-blocking JS on the critical path.",
-    tech: ["React", "JavaScript", "SCSS", "REST APIs", "Git"],
-  },
-  {
-    date: "2021 — 2022",
-    role: "Freelance Developer",
+    date: "Oct 2024 — June 2025",
+    role: "Founder",
     company: "Scrollcraft",
     url: "#",
     description:
-      "Built marketing sites and landing pages for early-stage founders. Owned design hand-off, implementation, accessibility review, and deployment.",
+      "Built modular landing-page frameworks for local enterprises, reducing project turnaround by 30% through reusable component systems and a sharp design hand-off process.",
     tech: ["React", "Next.js", "Tailwind CSS", "Vercel"],
+  },
+  {
+    date: "Jan 2025 — June 2025",
+    role: "Front-End Engineering Intern",
+    company: "InfoLabz",
+    url: "#",
+    description:
+      "Focused on performance optimization for legacy systems — code-splitting, image strategy, and trimming render-blocking JS — meaningfully reducing bundle sizes and improving Core Web Vitals.",
+    tech: ["React", "JavaScript", "SCSS", "Webpack", "Git"],
+  },
+  {
+    date: "2020 — 2024",
+    role: "Technical Content Writer",
+    company: "GeeksforGeeks",
+    url: "https://www.geeksforgeeks.org/",
+    description:
+      "Standardized documentation for complex JavaScript frameworks, reaching 50k+ readers. Authored and reviewed 100+ tutorials covering React, the event loop, hooks, layout systems, and CSS specificity.",
+    tech: ["JavaScript", "React", "CSS", "Technical Writing", "Mentoring"],
   },
 ];
 
@@ -55,12 +73,12 @@ export function Experience() {
         {jobs.map((job) => (
           <li key={job.role + job.company} className="mb-12">
             <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-              <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-card/40 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(168,85,247,0.15)]" />
+              <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-card/40 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(99,102,241,0.15)]" />
               <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-muted-foreground sm:col-span-2">
                 {job.date}
               </header>
               <div className="z-10 sm:col-span-6">
-                <h3 className="font-medium leading-snug text-foreground">
+                <h3 className="font-medium leading-snug text-foreground tracking-tight">
                   <a
                     href={job.url ?? "#"}
                     target="_blank"

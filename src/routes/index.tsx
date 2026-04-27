@@ -9,17 +9,17 @@ import { Writing } from "@/components/portfolio/Writing";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Humera Shaikh — Front-End Developer" },
+      { title: "Humera Shaikh — Front-End Engineer & AI-Driven Interfaces" },
       {
         name: "description",
         content:
-          "Humera Shaikh is a front-end developer who builds performance-focused, pixel-perfect interfaces for the web.",
+          "Humera Shaikh is a front-end engineer specializing in front-end architecture, design-to-code fidelity, and AI-driven interfaces for global clients.",
       },
-      { property: "og:title", content: "Humera Shaikh — Front-End Developer" },
+      { property: "og:title", content: "Humera Shaikh — Front-End Engineer" },
       {
         property: "og:description",
         content:
-          "Front-end developer building performance-focused, pixel-perfect interfaces for the web.",
+          "Front-end engineer specializing in front-end architecture, design-to-code fidelity, and AI-driven interfaces.",
       },
     ],
   }),
